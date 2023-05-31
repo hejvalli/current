@@ -1,0 +1,12 @@
+{
+    "builds": [
+        {
+        "src": "src/app/api/page.js",
+        "use": "@vercel/node"
+        }
+        ],
+    "routes": [
+      { "src": "/api/page", "dest": "api/page.js" }
+    ]
+  }
+  
