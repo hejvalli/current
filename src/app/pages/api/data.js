@@ -1,5 +1,5 @@
  export async function getData() {
-    const res = await fetch('https://164.92.130.40:443/data', {
+    const res = await fetch('https://164.92.130.40/data', {
       headers: {
         'Authorization': 'Basic ' + btoa('root:kArotte11!k')
       }
@@ -16,7 +16,7 @@
     return res.json();
   }
   export async function postData(data) {
-    const res = await fetch('https://164.92.130.40:443/data', {
+    const res = await fetch('https://164.92.130.40/data', {
       method: 'PATCH',
       headers: {
         'Authorization': 'Basic ' + btoa('root:kArotte11!k'),
