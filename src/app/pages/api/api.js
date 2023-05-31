@@ -1,5 +1,5 @@
 export async function getData() {
-    const res = await fetch('http://localhost:3001/data');
+    const res = await fetch('https://bakis.vercel.app/data');
     // The return value is *not* serialized
     // You can return Date, Map, Set, etc.
    
@@ -12,7 +12,7 @@ export async function getData() {
     return res.json();
   }
   export async function postData(data) {
-    const res = await fetch('http://localhost:3001/data', {
+    const res = await fetch('https://bakis.vercel.app/data', {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
