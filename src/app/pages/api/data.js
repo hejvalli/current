@@ -1,5 +1,9 @@
  export async function getData() {
-    const res = await fetch('https://bakis.vercel.app/data');
+    const res = await fetchfetch('http://164.92.130.40:3000/data', {
+      headers: {
+        'Authorization': 'Basic ' + btoa('bakis:kArotte11!k')
+      }
+    });
     // The return value is *not* serialized
     // You can return Date, Map, Set, etc.
    
@@ -12,9 +16,10 @@
     return res.json();
   }
   export async function postData(data) {
-    const res = await fetch('https://bakis.vercel.app/data', {
+    const res = await fetch('http://164.92.130.40:3000/data', {
       method: 'PATCH',
       headers: {
+        'Authorization': 'Basic ' + btoa('bakis:kArotte11!k'),
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(data),
