@@ -1,5 +1,5 @@
  export async function getData() {
-    const res = await fetchfetch('http://164.92.130.40:3000/data', {
+    const res = await fetch('http://164.92.130.40:3000/data', {
       headers: {
         'Authorization': 'Basic ' + btoa('bakis:kArotte11!k')
       }
