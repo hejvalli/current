@@ -1,7 +1,7 @@
  export async function getData() {
-    const res = await fetchfetch('http://164.92.130.40:3000/data', {
+    const res = await fetch('http://164.92.130.40:3000/data', {
       headers: {
-        'Authorization': 'Basic ' + btoa('bakis:kArotte11!k')
+        'Authorization': 'Basic ' + btoa('root:kArotte11!k')
       }
     });
     // The return value is *not* serialized
@@ -19,7 +19,7 @@
     const res = await fetch('http://164.92.130.40:3000/data', {
       method: 'PATCH',
       headers: {
-        'Authorization': 'Basic ' + btoa('bakis:kArotte11!k'),
+        'Authorization': 'Basic ' + btoa('root:kArotte11!k'),
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(data),
