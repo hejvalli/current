@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import ReactPlayer from 'react-player';
 import QuestionUI from './questionUI';
 import DrawingCanvas from './drawingCanvas';
-import {getData, postData} from './pages/api/api';
+import {getData, postData} from './pages/api/data';
 
 
 

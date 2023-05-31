@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link';
-import {getData} from './pages/api/api';
+import {getData} from './pages/api/data';
 
  
 export default async function Page() {

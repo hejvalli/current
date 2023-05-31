@@ -1,4 +1,4 @@
-export async function getData() {
+ export async function getData() {
     const res = await fetch('https://bakis.vercel.app/data');
     // The return value is *not* serialized
     // You can return Date, Map, Set, etc.
@@ -26,5 +26,4 @@ export async function getData() {
     }
   
     return res.json();
-  }
-  
+  };

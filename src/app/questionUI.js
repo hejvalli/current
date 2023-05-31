@@ -1,6 +1,6 @@
 "use client"
 import React, {useState, useEffect} from 'react';
-import {getData, postData} from './pages/api/api';
+import {getData, postData} from './pages/api/data';
 
 const QuestionUI = () => {
   const [choice, setChoice] = useState("");
